@@ -20,7 +20,7 @@ class App extends React.Component {
     e.preventDefault();
     const { city, country } = e.target.elements;
     const api_call = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city.value},${
+      `https://api.openweathermap.org/data/2.5/weather?q=${city.value},${
         country.value
       }&APPID=${API_KEY}`
     );
